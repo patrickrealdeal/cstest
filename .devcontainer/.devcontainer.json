@@ -1,0 +1,17 @@
+{
+  "name": "Zig 0.14 Development Environment",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu", 
+  "features": {
+    "ghcr.io/devcontainers/features/nix:1": {}
+  },
+  "postCreateCommand": "nix-env -iA nixpkgs.zig",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "prime31.zig"
+      ]
+    }
+  }
+}
+
